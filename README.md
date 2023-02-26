@@ -1,5 +1,9 @@
 # Clasificacion Automatica de Tickets con NLP
 
+# **Autores**
+1. Caleb Enriquez
+2. Roberto Chambi
+3. Carlos Marca
 
 **Descripcion del Problema**
 crear un modelo que pueda clasificar las quejas (complaints) de los clientes en función de los productos/servicios. Al hacerlo, puede segregar estos tickets en sus categorías relevantes y, por lo tanto, ayudar en la resolución rápida del problema.
@@ -95,3 +99,36 @@ min_df = 2 Significa "Omitir los términos que aparecen en menos de 2 quejas"
 ## 5.	Topic modeling
 
 Non-Negative Matrix Factorization (NMF) es una técnica no supervisada, por lo que no hay etiquetas de temas en los que se entrenará el modelo. La forma en que funciona es que NMF descompone (o factoriza) vectores de alta dimensión en una representación de menor dimensión. Estos vectores de menor dimensión no son negativos, lo que también significa que sus coeficientes no son negativos.
+
+
+En esta tarea se realiza lo siguiente:
+
+	Encuentra el mejor número de clústeres
+	Aplicar el mejor número para crear clústeres de palabras
+	Inspeccionar y validar la corrección de cada grupo de quejas
+	Corrija las etiquetas si es necesario
+	Asignar los clústeres a temas/nombres de clúster
+
+==========================================================================
+
+
+## 6.	Model building using Supervised Learning
+
+Hasta ahora ha creado el modelo para crear los temas para cada queja. Entonces, en la siguiente sección, los utilizará para clasificar cualquier queja nueva.
+Dado que utilizará la técnica de aprendizaje supervisado, tenemos que convertir los nombres de los temas en números (las matrices numpy solo entienden los números)
+
+==========================================================================
+
+
+## 7.	Model training and evaluation
+
+	Crear los count vectors usando Count Vectoriser
+	Transformar la palabra vector a tf-idf
+	Crear los datos de entrenamiento y prueba utilizando el train_test_split sobre el tf-idf y los temas
+	
+	
+==========================================================================
+
+
+## 8.	Model inference
+
