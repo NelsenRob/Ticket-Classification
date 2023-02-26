@@ -1,9 +1,11 @@
 # Clasificacion Automatica de Tickets con NLP
 
-# **Autores**
+**Autores**
 1. Caleb Enriquez
 2. Roberto Chambi
 3. Carlos Marca
+
+
 
 **Descripcion del Problema**
 crear un modelo que pueda clasificar las quejas (complaints) de los clientes en función de los productos/servicios. Al hacerlo, puede segregar estos tickets en sus categorías relevantes y, por lo tanto, ayudar en la resolución rápida del problema.
