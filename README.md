@@ -19,7 +19,7 @@ Con la ayuda del modelado de temas, se podrá asignar cada ticket a su respectiv
 
 
 
-===============================================================================
+==========================================================================
 
 
 ## Flujo de Trajajo:
@@ -34,7 +34,7 @@ Con la ayuda del modelado de temas, se podrá asignar cada ticket a su respectiv
 8.	Model inference
 
 
-===============================================================================
+==========================================================================
 
 
 ## 1. Data Loading
@@ -43,7 +43,7 @@ Con la ayuda del modelado de temas, se podrá asignar cada ticket a su respectiv
 Los datos están en formato JSON y necesitan ser convertidos a un dataframe. Se emplea la libreria json de python para este proposito
 
 
-===============================================================================
+==========================================================================
 
 
 ## 2.	Text preprocessing
@@ -63,7 +63,7 @@ Una vez realizado estas operaciones de limpieza, debe realiza lo siguiente:
     - Emplear etiquetas POS para obtener palabras relevantes de los textos
 
 
-===============================================================================
+==========================================================================
 
 
 ## 3.	Exploratory Data Analysis (EDA)
