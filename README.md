@@ -116,7 +116,7 @@ En esta tarea se realiza lo siguiente:
 
 ## 6.	Model building using Supervised Learning
 
-Hasta ahora ha creado el modelo para crear los temas para cada queja. Entonces, en la siguiente sección, los utilizará para clasificar cualquier queja nueva.
+Hasta ahora ha creado el modelado de los datos para cada queja. Entonces, en la siguiente sección, los utilizará para clasificar cualquier queja nueva.
 Dado que utilizará la técnica de aprendizaje supervisado, tenemos que convertir los nombres de los temas en números (las matrices numpy solo entienden los números)
 
 ==========================================================================
