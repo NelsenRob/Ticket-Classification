@@ -71,3 +71,27 @@ Una vez realizado estas operaciones de limpieza, debe realiza lo siguiente:
     - Visualización de los datos según la longitud del carácteres 'Complaint'
     - Uso de una nube de palabras donde se muestran las top 40 palabras más frecuentes de todos los artículos después de procesar el texto
     - Determinación de los mejores unigramas, bigramas y trigramas por frecuencia entre todas las quejas después de procesar el texto
+
+
+==========================================================================
+
+
+## 4.	Feature Extraction
+
+Transformación de los textos sin procesar en una matriz de características TF-IDF
+
+TfidfVectorizer(max_df=0.95, min_df=2, stop_words='english')
+
+**max_df** se utiliza para eliminar términos que aparecen con demasiada frecuencia, también conocido como "corpus-specific stop words"
+max_df = 0.95 Significa "Ignorar términos que aparecen en más del 95% de las quejas"
+
+**min_df** se utiliza para quitar términos que aparecen con demasiada poca frecuencia
+min_df = 2 Significa "Omitir los términos que aparecen en menos de 2 quejas"
+
+
+==========================================================================
+
+
+## 5.	Topic modeling
+
+Non-Negative Matrix Factorization (NMF) es una técnica no supervisada, por lo que no hay etiquetas de temas en los que se entrenará el modelo. La forma en que funciona es que NMF descompone (o factoriza) vectores de alta dimensión en una representación de menor dimensión. Estos vectores de menor dimensión no son negativos, lo que también significa que sus coeficientes no son negativos.
