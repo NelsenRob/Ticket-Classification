@@ -10,7 +10,7 @@
 ## DATASET
 https://drive.google.com/file/d/1uTeZFfNlyvSlFbc2YpSzXDiZ-INIqzva/view?usp=sharing
 
-#**Descripcion del Problema**
+**Descripcion del Problema**
 
 crear un modelo que pueda clasificar las quejas (complaints) de los clientes en función de los productos/servicios. Al hacerlo, puede segregar estos tickets en sus categorías relevantes y, por lo tanto, ayudar en la resolución rápida del problema.
 
