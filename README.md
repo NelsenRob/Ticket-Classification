@@ -36,3 +36,38 @@ Con la ayuda del modelado de temas, se podrá asignar cada ticket a su respectiv
 
 ===============================================================================
 
+
+## 1. Data Loading
+
+
+Los datos están en formato JSON y necesitan ser convertidos a un dataframe. Se emplea la libreria json de python para este proposito
+
+
+===============================================================================
+
+
+## 2.	Text preprocessing
+
+
+Preparar el texto para el modelado de temas
+Una vez que fueron eliminados todas las quejas en blanco, se aplica lo siguiente:
+
+    - Aplicar texto esté en minúsculas
+    - Quitar texto entre corchetes
+    - Quitar puntuación
+    - Quitar palabras que contengan números
+
+Una vez realizado estas operaciones de limpieza, debe realiza lo siguiente:
+
+    - Lematizar los textos
+    - Emplear etiquetas POS para obtener palabras relevantes de los textos
+
+
+===============================================================================
+
+
+## 3.	Exploratory Data Analysis (EDA)
+
+    - Visualización de los datos según la longitud del carácteres 'Complaint'
+    - Uso de una nube de palabras donde se muestran las top 40 palabras más frecuentes de todos los artículos después de procesar el texto
+    - Determinación de los mejores unigramas, bigramas y trigramas por frecuencia entre todas las quejas después de procesar el texto
