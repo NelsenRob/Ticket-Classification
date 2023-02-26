@@ -140,5 +140,7 @@ modelos:
 * Decision Tree
 * Random Forest
 
+![download](https://user-images.githubusercontent.com/108103579/221389627-961f1753-2eb0-497c-b7f5-ccbb8b8b1667.png)
 
+El mejor modelo para predecir los tópicos en las quejas de los clientes es sin ninguna duda el Random Forest dandonos una accuracy de 90.25% y una precisión de 90% lo cual lo consideraríamos un muy buen modelo y el que debería ser tomado en cuenta para futuras clasificaciones.
 
