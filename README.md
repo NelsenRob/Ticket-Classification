@@ -134,3 +134,11 @@ Dado que utilizará la técnica de aprendizaje supervisado, tenemos que converti
 
 ## 8.	Model inference
 
+modelos:
+
+* Logistic regression
+* Decision Tree
+* Random Forest
+
+
+
