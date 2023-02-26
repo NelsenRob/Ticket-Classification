@@ -139,6 +139,7 @@ modelos:
 * Logistic regression
 * Decision Tree
 * Random Forest
+* Naive Bayes
 
 ![download](https://user-images.githubusercontent.com/108103579/221389627-961f1753-2eb0-497c-b7f5-ccbb8b8b1667.png)
 
