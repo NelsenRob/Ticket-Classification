@@ -12,13 +12,13 @@ crear un modelo que pueda clasificar las quejas (complaints) de los clientes en 
 
 Realizar el modelado de temas en los datos .json proporcionados por la empresa. Dado que estos datos no están etiquetados, se aplica NMF para analizar patrones y clasificar los tickets en los siguientes cinco grupos según sus productos/servicios:
 
-    - Tarjetas de Credito / Tarjetas Prepagadas (Credit card / Prepaid Card)
+* Tarjetas de Credito / Tarjetas Prepagadas (Credit card / Prepaid Card)
 
-    - Servicios de Cuentas de Banco (Bank account services)
+* Servicios de Cuentas de Banco (Bank account services)
 
-    - Reportes de Robos (Theft/Dispute reporting)
+* Reportes de Robos (Theft/Dispute reporting)
 
-    - Prestamos Hipotecarios y Otros Prestamos (Mortgages/loans)
+* Prestamos Hipotecarios y Otros Prestamos (Mortgages/loans)
 
 
 Con la ayuda del modelado de temas, se podrá asignar cada ticket a su respectivo departamento/categoría. Luego puede usar estos datos para entrenar cualquier modelo supervisado, como regresión logística, árbol de decisión o bosque aleatorio. Usando este modelo entrenado, puede clasificar cualquier nuevo ticket de soporte de quejas de clientes en su departamento correspondiente.
@@ -58,15 +58,15 @@ Los datos están en formato JSON y necesitan ser convertidos a un dataframe. Se 
 Preparar el texto para el modelado de temas
 Una vez que fueron eliminados todas las quejas en blanco, se aplica lo siguiente:
 
-    - Aplicar texto esté en minúsculas
-    - Quitar texto entre corchetes
-    - Quitar puntuación
-    - Quitar palabras que contengan números
+* Aplicar texto esté en minúsculas
+* Quitar texto entre corchetes
+* Quitar puntuación
+* Quitar palabras que contengan números
 
 Una vez realizado estas operaciones de limpieza, debe realiza lo siguiente:
 
-    - Lematizar los textos
-    - Emplear etiquetas POS para obtener palabras relevantes de los textos
+* Lematizar los textos
+* Emplear etiquetas POS para obtener palabras relevantes de los textos
 
 
 ==========================================================================
@@ -74,9 +74,9 @@ Una vez realizado estas operaciones de limpieza, debe realiza lo siguiente:
 
 ## 3.	Exploratory Data Analysis (EDA)
 
-    - Visualización de los datos según la longitud del carácteres 'Complaint'
-    - Uso de una nube de palabras donde se muestran las top 40 palabras más frecuentes de todos los artículos después de procesar el texto
-    - Determinación de los mejores unigramas, bigramas y trigramas por frecuencia entre todas las quejas después de procesar el texto
+* Visualización de los datos según la longitud del carácteres 'Complaint'
+* Uso de una nube de palabras donde se muestran las top 40 palabras más frecuentes de todos los artículos después de procesar el texto
+* Determinación de los mejores unigramas, bigramas y trigramas por frecuencia entre todas las quejas después de procesar el texto
 
 
 ==========================================================================
@@ -105,11 +105,11 @@ Non-Negative Matrix Factorization (NMF) es una técnica no supervisada, por lo q
 
 En esta tarea se realiza lo siguiente:
 
-	Encuentra el mejor número de clústeres
-	Aplicar el mejor número para crear clústeres de palabras
-	Inspeccionar y validar la corrección de cada grupo de quejas
-	Corrija las etiquetas si es necesario
-	Asignar los clústeres a temas/nombres de clúster
+* Encuentra el mejor número de clústeres
+* Aplicar el mejor número para crear clústeres de palabras
+* Inspeccionar y validar la corrección de cada grupo de quejas
+* Corrija las etiquetas si es necesario
+* Asignar los clústeres a temas/nombres de clúster
 
 ==========================================================================
 
@@ -124,9 +124,9 @@ Dado que utilizará la técnica de aprendizaje supervisado, tenemos que converti
 
 ## 7.	Model training and evaluation
 
-	Crear los count vectors usando Count Vectoriser
-	Transformar la palabra vector a tf-idf
-	Crear los datos de entrenamiento y prueba utilizando el train_test_split sobre el tf-idf y los temas
+* Crear los count vectors usando Count Vectoriser
+* Transformar la palabra vector a tf-idf
+* Crear los datos de entrenamiento y prueba utilizando el train_test_split sobre el tf-idf y los temas
 	
 	
 ==========================================================================
